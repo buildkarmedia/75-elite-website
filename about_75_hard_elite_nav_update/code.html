@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&amp;family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-container": "#fbb423",
+              "secondary-dim": "#eb832c",
+              "tertiary": "#ffc562",
+              "surface-container": "#1a1a1a",
+              "secondary-fixed": "#ffc69f",
+              "on-error-container": "#ffd2c8",
+              "tertiary-dim": "#eba60f",
+              "on-tertiary-fixed": "#372400",
+              "on-surface-variant": "#adaaaa",
+              "inverse-on-surface": "#565555",
+              "primary": "#ff9159",
+              "inverse-primary": "#a14100",
+              "inverse-surface": "#fcf9f8",
+              "on-surface": "#ffffff",
+              "surface-container-high": "#20201f",
+              "on-background": "#ffffff",
+              "secondary-fixed-dim": "#ffb37d",
+              "primary-fixed-dim": "#f66700",
+              "on-secondary": "#462000",
+              "on-primary-fixed-variant": "#4f1c00",
+              "background": "#0e0e0e",
+              "error-container": "#b92902",
+              "on-secondary-fixed-variant": "#803f00",
+              "primary-fixed": "#ff7a2f",
+              "tertiary-fixed": "#fbb423",
+              "on-tertiary": "#5e4000",
+              "on-primary": "#531e00",
+              "surface-variant": "#262626",
+              "on-secondary-fixed": "#552800",
+              "outline": "#767575",
+              "error": "#ff7351",
+              "primary-dim": "#ff7524",
+              "tertiary-fixed-dim": "#eba60f",
+              "surface-container-low": "#131313",
+              "outline-variant": "#484847",
+              "on-tertiary-fixed-variant": "#5e4000",
+              "error-dim": "#d53d18",
+              "surface-tint": "#ff9159",
+              "surface": "#0e0e0e",
+              "on-tertiary-container": "#523700",
+              "on-error": "#450900",
+              "surface-dim": "#0e0e0e",
+              "secondary-container": "#944a00",
+              "on-secondary-container": "#fff6f2",
+              "surface-container-lowest": "#000000",
+              "primary-container": "#ff7a2f",
+              "secondary": "#f88d36",
+              "surface-bright": "#2c2c2c",
+              "on-primary-container": "#401500",
+              "surface-container-highest": "#262626",
+              "on-primary-fixed": "#000000"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .kinetic-text {
+            -webkit-text-stroke: 1px rgba(255, 145, 89, 0.3);
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary selection:text-on-primary-fixed">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-neutral-950/60 backdrop-blur-xl">
+<nav class="flex justify-between items-center px-8 py-6 max-w-[1920px] mx-auto">
+<div class="text-2xl font-black italic tracking-tighter text-orange-500 font-headline">
+                75 HARD ELITE
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-neutral-400 font-medium font-headline uppercase tracking-tighter hover:text-neutral-100 transition-colors duration-300" href="../75_hard_elite_landing_page_nav_update/code.html">Home</a>
+<a class="text-neutral-400 font-medium font-headline uppercase tracking-tighter hover:text-neutral-100 transition-colors duration-300" href="../about_75_hard_elite_nav_update/code.html">About</a>
+<a class="text-neutral-400 font-medium font-headline uppercase tracking-tighter hover:text-neutral-100 transition-colors duration-300" href="../privacy_policy_nav_update/code.html">Privacy Policy</a>
+<a class="text-neutral-400 font-medium font-headline uppercase tracking-tighter hover:text-neutral-100 transition-colors duration-300" href="../terms_of_service_nav_update/code.html">Terms of Service</a>
+<a class="text-neutral-400 font-medium font-headline uppercase tracking-tighter hover:text-neutral-100 transition-colors duration-300" href="../contact_us_nav_update_1/code.html">Contact</a>
+<button class="bg-primary text-on-primary-fixed font-headline font-bold px-6 py-2 rounded-full scale-95 hover:scale-100 active:scale-90 transition-transform duration-200 uppercase tracking-tighter">
+                    START CHALLENGE
+                </button>
+</div>
+<div class="md:hidden flex items-center">
+<span class="material-symbols-outlined text-primary cursor-pointer" data-icon="menu">menu</span>
+</div>
+</nav>
+</header>
+<main class="relative overflow-hidden">
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-center pt-24">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-40 mix-blend-luminosity" data-alt="monochrome brutalist concrete building with sharp shadows and aggressive geometric lines under a dark moody sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJGwMJn6riyz-UHFmCuUUwOCvWwzLQmHK4rvCTxL_roW3r4_I-kKxjdhjc_qzArooo_dSELkhFfPMOcUTMAk1IcNuTYzQJezma0zBi2Q51CL-Zn8l4cyovwPvYPaCv4gxc1WYMvwTuXe_fJW70nHMZVdq4Ozabf64aEYutJfE8ipVZYkiz5LH4S07cAg8VkbWBzwfHnPzgr7Gh9ZkTQfCX6ZdvGOMC2aNJgCZYBDnFDtJjl30KaETG6J_Xj26FQCVT86T46puuLpXo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 px-8 text-center max-w-6xl">
+<p class="font-headline text-primary font-bold tracking-[0.4em] uppercase mb-6 text-sm">SINCE THE BEGINNING</p>
+<h1 class="font-headline text-6xl md:text-9xl font-black italic leading-[0.85] tracking-tighter uppercase mb-12">
+                    THE ARCHITECTS OF <br/>
+<span class="text-primary">DISCIPLINE</span>
+</h1>
+<div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+<button class="bg-primary text-on-primary-fixed font-headline font-black px-10 py-5 rounded-full hover:scale-105 transition-transform uppercase tracking-tighter">
+                        START THE PROTOCOL
+                    </button>
+<button class="bg-surface-container-high border border-outline-variant/30 text-on-background font-headline font-bold px-10 py-5 rounded-full hover:bg-surface-bright transition-colors uppercase tracking-tighter">
+                        READ THE STORY
+                    </button>
+</div>
+</div>
+<!-- Background Watermark -->
+<div class="absolute -bottom-10 -right-20 pointer-events-none select-none">
+<span class="font-headline font-black text-[25rem] leading-none opacity-[0.03] italic uppercase">ELITE</span>
+</div>
+</section>
+<!-- The Philosophy: Kinetic Monolith -->
+<section class="py-32 px-8 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-20 items-start">
+<div class="md:col-span-7">
+<h2 class="font-headline text-5xl md:text-7xl font-extrabold uppercase tracking-tighter mb-8 leading-none">
+                        THE KINETIC <br/>
+<span class="kinetic-text">MONOLITH</span>
+</h2>
+<div class="space-y-8 text-on-surface-variant text-lg leading-relaxed max-w-xl">
+<p>We believe that discipline isn't a temporary state, but a structural integrity. Like a monolith, it is unyielding, permanent, and heavy. But unlike stone, true discipline is kinetic—it fuels explosive action and relentless growth.</p>
+<p>75 HARD ELITE is not a fitness program. It is an operating system for the mind. We reject compromise. We ignore the "off" switch. We build the version of you that doesn't negotiate with mediocrity.</p>
+</div>
+</div>
+<div class="md:col-span-5 relative">
+<div class="aspect-[3/4] rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="dramatic black and white close-up of an athlete lifting a heavy stone atlas ball, veins and sweat in high definition contrast" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAK07XjgGZbiCHy7WnLhKBmLLjukNrNqZ4lEhJEJ3mWLYoklLLHeeGo0wKqFZfjMYJchzqPwAcUn-sbM7rtmTkdYjjxt-zKfoJEhQlZ6_--juADpS4WIbaMXfsDKrM8E20XnD7Qz-iMvsV5DL_1H6LEdb4roz65_C4fTH0CrMj7mQLibvwQ7-fHkxiOZqd1nTJ0twZm05MF5BKtPoc1Tsox8h_pXNjfVIu8lnBQiwxQYd4T3VkSqNV_PqeAmG2KWsyfPDt3idA6IudK"/>
+</div>
+<div class="absolute -bottom-8 -left-8 bg-primary p-8 rounded-lg shadow-2xl max-w-[240px]">
+<span class="font-headline font-black text-4xl italic text-on-primary-fixed leading-none">ZERO<br/>CHEATS.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- The App Story: Local First -->
+<section class="py-32 bg-surface-container-low">
+<div class="px-8 max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div class="max-w-2xl">
+<span class="text-primary font-headline font-bold tracking-widest text-sm uppercase">THE TECHNOLOGY</span>
+<h2 class="font-headline text-5xl font-black uppercase tracking-tighter mt-4 leading-none">BUILT FOR THE SHADOWS</h2>
+</div>
+<p class="text-on-surface-variant font-medium max-w-xs border-l-2 border-primary pl-6">
+                        Data belongs to the warrior, not the server. Total privacy for total focus.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="bg-surface-container-high p-12 rounded-lg flex flex-col gap-6 group hover:bg-surface-bright transition-colors">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="shield">shield</span>
+<h3 class="font-headline text-2xl font-bold uppercase tracking-tighter">LOCAL-FIRST</h3>
+<p class="text-on-surface-variant leading-relaxed">Your progress is stored on your device. No cloud hacks, no data harvesting, no compromise on your personal victory.</p>
+</div>
+<div class="bg-surface-container-high p-12 rounded-lg flex flex-col gap-6 group hover:bg-surface-bright transition-colors">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="offline_bolt">offline_bolt</span>
+<h3 class="font-headline text-2xl font-bold uppercase tracking-tighter">ZERO LATENCY</h3>
+<p class="text-on-surface-variant leading-relaxed">The app works in the depths of the mountain or the center of the city. No internet required for elite performance tracking.</p>
+</div>
+<div class="bg-surface-container-high p-12 rounded-lg flex flex-col gap-6 group hover:bg-surface-bright transition-colors">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="lock">lock</span>
+<h3 class="font-headline text-2xl font-bold uppercase tracking-tighter">PRIVACY CENTRIC</h3>
+<p class="text-on-surface-variant leading-relaxed">We don't want your email. We don't want your name. We want your results. Pure, unadulterated biometric progress tracking.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Impact/Statistics -->
+<section class="py-32 px-8 overflow-hidden relative">
+<div class="max-w-7xl mx-auto relative z-10">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-0 divide-y md:divide-y-0 md:divide-x divide-outline-variant/20">
+<div class="p-10 flex flex-col items-center justify-center text-center">
+<span class="font-headline text-7xl font-black text-primary italic leading-none">75</span>
+<span class="font-label text-xs uppercase tracking-[0.3em] font-bold text-on-surface-variant mt-4">DAYS OF HELL</span>
+</div>
+<div class="p-10 flex flex-col items-center justify-center text-center">
+<span class="font-headline text-7xl font-black text-on-surface italic leading-none">0</span>
+<span class="font-label text-xs uppercase tracking-[0.3em] font-bold text-on-surface-variant mt-4">COMPROMISES</span>
+</div>
+<div class="p-10 flex flex-col items-center justify-center text-center">
+<span class="font-headline text-7xl font-black text-on-surface italic leading-none">100</span>
+<span class="font-label text-xs uppercase tracking-[0.3em] font-bold text-on-surface-variant mt-4">PERCENT COMMITTED</span>
+</div>
+<div class="p-10 flex flex-col items-center justify-center text-center">
+<span class="font-headline text-7xl font-black text-primary italic leading-none">24</span>
+<span class="font-label text-xs uppercase tracking-[0.3em] font-bold text-on-surface-variant mt-4">HOUR MINDSET</span>
+</div>
+</div>
+</div>
+<!-- Segmented Progress Bar Signature -->
+<div class="mt-20 flex gap-2 justify-center px-4 overflow-x-hidden">
+<div class="h-4 w-12 bg-primary rounded-sm opacity-20"></div>
+<div class="h-4 w-12 bg-primary rounded-sm opacity-40"></div>
+<div class="h-4 w-12 bg-primary rounded-sm opacity-60"></div>
+<div class="h-4 w-12 bg-primary rounded-sm"></div>
+<div class="h-4 w-12 bg-surface-container-highest rounded-sm"></div>
+<div class="h-4 w-12 bg-surface-container-highest rounded-sm"></div>
+<div class="h-4 w-12 bg-surface-container-highest rounded-sm"></div>
+<div class="h-4 w-12 bg-surface-container-highest rounded-sm"></div>
+<div class="h-4 w-12 bg-surface-container-highest rounded-sm"></div>
+<div class="h-4 w-12 bg-surface-container-highest rounded-sm"></div>
+</div>
+</section>
+<!-- The Creator/Mission -->
+<section class="py-32 px-8 bg-surface-container">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="relative group">
+<div class="aspect-square bg-surface-container-highest rounded-lg overflow-hidden relative grayscale hover:grayscale-0 transition-all duration-700">
+<img class="w-full h-full object-cover" data-alt="portrait of a focused developer in a dark room with subtle rim lighting on his face, cinematic and high contrast" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuX_A37I0Pab3_re2mYlgAVQYpYENM_OD_TO7FDzWv9s5wrfeGpjVcjy_mcQKySBbxaUOcVjHD9bdjj9crRhE6KN8km9iuYlcUhNg-x-SQVWROD15P4e-BGatWrgo2zPnuLZMhqQ7V1ddZkF_kOvH5OiPM_uWJVtgsVunZhAIOXAB5hwm7xijmm8spIziSOz9FUYH4riyV8lRkedWpyXT8LPY0qGAd46jHmeZOvtz5lFywrFLXZ3sqMEceUnnYSGpRMssLUkFaPPkr"/>
+</div>
+<div class="absolute -top-6 -right-6 font-headline text-9xl font-black italic opacity-5 leading-none">ME</div>
+</div>
+<div class="space-y-10">
+<span class="text-primary font-headline font-bold tracking-widest text-sm uppercase">THE VISIONARY</span>
+<h2 class="font-headline text-5xl md:text-7xl font-black uppercase tracking-tighter leading-none">ONE DEV.<br/>ONE MISSION.</h2>
+<div class="space-y-6 text-on-surface-variant text-lg leading-relaxed">
+<p>I didn't build this app to compete with Silicon Valley. I built it because I was tired of bloated apps selling user data and sugar-coating the hard truth about discipline.</p>
+<p>As a developer and a practitioner of the 75 HARD protocol, I needed a tool that was as cold and efficient as the discipline itself. ELITE is the manifestation of that need—a minimalist, local-first fortress for your journey.</p>
+<div class="pt-8 flex items-center gap-6">
+<div class="w-16 h-[2px] bg-primary"></div>
+<span class="font-headline font-bold text-on-surface uppercase tracking-tighter">The Developer behind the Code</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer Call to Action -->
+<section class="py-40 text-center px-8">
+<h2 class="font-headline text-6xl md:text-8xl font-black uppercase tracking-tighter italic mb-12">ARE YOU <span class="text-primary">ELITE?</span></h2>
+<button class="bg-primary text-on-primary-fixed font-headline font-black px-16 py-8 text-2xl rounded-full hover:scale-110 transition-transform uppercase tracking-tighter shadow-[0_0_50px_rgba(255,145,89,0.3)]">
+                COMMENCE THE JOURNEY
+            </button>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 border-t border-neutral-800/20 bg-neutral-950 mt-24">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 w-full max-w-[1920px] mx-auto">
+<div class="text-lg font-black text-neutral-100 font-headline">
+                75 HARD ELITE
+            </div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-body text-xs tracking-widest uppercase text-neutral-500 hover:text-orange-500 transition-colors" href="../75_hard_elite_landing_page_nav_update/code.html">Home</a>
+<a class="font-body text-xs tracking-widest uppercase text-neutral-500 hover:text-orange-500 transition-colors" href="../about_75_hard_elite_nav_update/code.html">About</a>
+<a class="font-body text-xs tracking-widest uppercase text-neutral-500 hover:text-orange-500 transition-colors" href="../privacy_policy_nav_update/code.html">Privacy Policy</a>
+<a class="font-body text-xs tracking-widest uppercase text-neutral-500 hover:text-orange-500 transition-colors" href="../terms_of_service_nav_update/code.html">Terms of Service</a>
+<a class="font-body text-xs tracking-widest uppercase text-neutral-500 hover:text-orange-500 transition-colors" href="../contact_us_nav_update_1/code.html">Contact</a>
+</div>
+<div class="font-body text-xs tracking-widest uppercase text-neutral-500 opacity-80">
+                © 2024 75 HARD ELITE. ALL RIGHTS RESERVED.
+            </div>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-8 pt-4 bg-[#0e0e0e]/80 backdrop-blur-2xl z-50 shadow-[0_-10px_40px_-15px_rgba(255,145,89,0.15)]">
+<a class="flex flex-col items-center justify-center text-zinc-500 px-6 py-2 transition-all hover:bg-zinc-800/50 hover:text-white" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="grid_view">grid_view</span>
+<span class="font-headline text-[10px] uppercase tracking-widest font-bold">HOME</span>
+</a>
+<a class="flex flex-col items-center justify-center text-zinc-500 px-6 py-2 transition-all hover:bg-zinc-800/50 hover:text-white" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="person">person</span>
+<span class="font-headline text-[10px] uppercase tracking-widest font-bold">ABOUT</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#ff9159] bg-[#ff9159]/10 rounded-full px-6 py-2 transition-all" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="bolt">bolt</span>
+<span class="font-headline text-[10px] uppercase tracking-widest font-bold">START</span>
+</a>
+</nav>
+</body></html>

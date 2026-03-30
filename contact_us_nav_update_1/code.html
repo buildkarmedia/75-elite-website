@@ -132,7 +132,7 @@
 <!-- Form Column -->
 <div class="lg:col-span-7">
 <div class="glass-panel p-8 md:p-12 rounded-none border-l-4 border-primary">
-<form action="#" class="space-y-10">
+<form id="contactForm" action="#" class="space-y-10">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
 <div class="group relative">
 <input class="peer w-full bg-transparent border-b border-outline-variant py-3 focus:outline-none focus:border-primary transition-all text-lg font-medium" id="name" name="name" placeholder=" " required="" type="text"/>
@@ -237,4 +237,35 @@
 </div>
 </div>
 </footer>
+<script>
+  (function () {
+    const form = document.getElementById("contactForm");
+    if (!form) return;
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const to = "buildkarmedia@gmail.com";
+      const name = (form.elements["name"]?.value || "").trim();
+      const email = (form.elements["email"]?.value || "").trim();
+      const subject = (form.elements["subject"]?.value || "").trim() || "General Command";
+      const message = (form.elements["message"]?.value || "").trim();
+
+      const mailSubject = "75 HARD ELITE - " + subject;
+      const body =
+        "Name: " + (name || "N/A") + "\n" +
+        "Email: " + (email || "N/A") + "\n" +
+        "Subject: " + subject + "\n\n" +
+        (message || "(No message)");
+
+      const params = new URLSearchParams({
+        subject: mailSubject,
+        body: body
+      });
+
+      // Opens the user's email client with the form pre-filled.
+      window.location.href = "mailto:" + to + "?" + params.toString();
+    });
+  })();
+</script>
 </body></html>
